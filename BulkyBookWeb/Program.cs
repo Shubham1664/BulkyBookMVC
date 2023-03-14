@@ -1,4 +1,4 @@
-using BulkyBookWeb.Data;
+using BulkyBook.Data;
 using Microsoft.AspNetCore.Connections;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.SqlServer;
