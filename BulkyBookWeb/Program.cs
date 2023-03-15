@@ -1,11 +1,7 @@
 using BulkyBook.Data;
 using BulkyBook.DataAccess.Repository;
-using BulkyBook.DataAccess.Repository.Contracts;
 using BulkyBook.DataAccess.Repository.IRepository;
-using BulkyBook.DataAccess.Repository.Repositories;
-using Microsoft.AspNetCore.Connections;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.SqlServer;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -19,7 +15,11 @@ builder.Services.AddScoped<IUnitOfWorkRepository, UnitOfWorkRepository>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
-if (!app.Environment.IsDevelopment())
+if (app.Environment.IsDevelopment())
+{
+    app.UseDeveloperExceptionPage();
+}
+else
 {
     app.UseExceptionHandler("/Home/Error");
     // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
@@ -35,6 +35,6 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+    pattern: "{area=Customer}/{controller=Home}/{action=Index}/{id?}");
 
 app.Run();

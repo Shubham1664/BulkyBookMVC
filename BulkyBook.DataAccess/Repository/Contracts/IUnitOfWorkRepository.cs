@@ -1,15 +1,16 @@
-﻿using BulkyBook.DataAccess.Repository.IRepository;
+﻿using BulkyBook.DataAccess.Repository.Contracts;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BulkyBook.DataAccess.Repository.Contracts
+namespace BulkyBook.DataAccess.Repository.IRepository
 {
-    public interface IUnitOfWork
+    public interface IUnitOfWorkRepository
     {
         ICategoryRepository Category { get; }
+        ICoverTypeRepository CoverType { get; }
 
         void Save();
     }
