@@ -12,16 +12,17 @@ namespace BulkyBookWeb.Controllers;
 public class ProductController : Controller
 {
 	private readonly IUnitOfWorkRepository _unitOfWork;
+	private readonly IWebHostEnvironment _HostEnvironment;
 
-	public ProductController(IUnitOfWorkRepository unitOfWork)
+	public ProductController(IUnitOfWorkRepository unitOfWork, IWebHostEnvironment HostEnvironment)
 	{
 		_unitOfWork = unitOfWork;
+		_HostEnvironment = HostEnvironment;
 	}
 
 	public IActionResult Index()
 	{
-		IEnumerable<CoverType> objCoverTypeList = _unitOfWork.CoverType.GetAll();
-		return View(objCoverTypeList);
+		return View();
 	}
 
 	//GET
@@ -42,25 +43,12 @@ public class ProductController : Controller
 			})
 		};
 
-		Product product = new();
-		IEnumerable<SelectListItem> CategoryList = _unitOfWork.Category.GetAll().Select(
-			u => new SelectListItem
-			{
-				Text= u.Name,
-				Value= u.ID.ToString()
-			});
-		IEnumerable<SelectListItem> CoverTypeList = _unitOfWork.CoverType.GetAll().Select(
-			u => new SelectListItem
-			{
-				Text = u.Name,
-				Value = u.Id.ToString()
-			});
+		
 		if (id == null || id == 0)
 		{
 			//create product
-			ViewBag.CategoryList = CategoryList;
-			ViewBag.CoverTypeList = CoverTypeList;
-			return View(product);
+			
+			return View(ProductVM);
 		}
 		else
 		{
@@ -68,20 +56,34 @@ public class ProductController : Controller
 		}
 
 
-		return View(product);
+		return View(ProductVM);
 	}
 
 	//POST
 	[HttpPost]
 	[ValidateAntiForgeryToken]
-	public IActionResult Upsert(CoverType obj)
-	{
+	public IActionResult Upsert(ProductVM obj, IFormFile? file)
+	{ 
 
 		if (ModelState.IsValid)
 		{
-			_unitOfWork.CoverType.update(obj);
+			string wwwRootPath = _HostEnvironment.WebRootPath;
+			if(file!=null)
+			{
+				string fileName = Guid.NewGuid().ToString();
+				var uploads = Path.Combine(wwwRootPath, @"images\Products");
+				var extension = Path.GetExtension(file.FileName);
+				using (var fileStreams = new FileStream(Path.Combine(uploads, fileName + extension), FileMode.Create))
+				{
+					file.CopyTo(fileStreams);
+				}
+				obj.product.ImageUrl = @"\images\products\" + fileName + extension;
+			}
+#pragma warning disable CS8604 // Possible null reference argument.
+			_unitOfWork.Product.Add(obj.product);
+#pragma warning restore CS8604 // Possible null reference argument.
 			_unitOfWork.Save();
-			TempData["success"] = "CoverType updated successfully";
+			TempData["success"] = "Product created successfully";
 			return RedirectToAction("Index");
 		}
 		return View(obj);
@@ -116,8 +118,18 @@ public class ProductController : Controller
 
 		_unitOfWork.CoverType.Remove(obj);
 		_unitOfWork.Save();
-		TempData["success"] = "CoverType deleted successfully";
+		TempData["success"] = "Product deleted successfully";
 		return RedirectToAction("Index");
 
 	}
+	#region APICALLS
+	[HttpGet]
+
+	public IActionResult GetAll()
+	{
+		var productList = _unitOfWork.Product.GetAll();
+		return Json(new { data = productList });
+	}
+
+	#endregion
 }
