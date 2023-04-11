@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\shverma\\Desktop\\Projects\\BulkyBook\\BulkyBook.Utility\\BulkyBook.Utility.csproj": {}
+    "C:\\Users\\shverma\\Desktop\\Projects\\BulkyBookMVC\\BulkyBook.Utility\\BulkyBook.Utility.csproj": {}
   },
   "projects": {
-    "C:\\Users\\shverma\\Desktop\\Projects\\BulkyBook\\BulkyBook.Utility\\BulkyBook.Utility.csproj": {
+    "C:\\Users\\shverma\\Desktop\\Projects\\BulkyBookMVC\\BulkyBook.Utility\\BulkyBook.Utility.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\shverma\\Desktop\\Projects\\BulkyBook\\BulkyBook.Utility\\BulkyBook.Utility.csproj",
+        "projectUniqueName": "C:\\Users\\shverma\\Desktop\\Projects\\BulkyBookMVC\\BulkyBook.Utility\\BulkyBook.Utility.csproj",
         "projectName": "BulkyBook.Utility",
-        "projectPath": "C:\\Users\\shverma\\Desktop\\Projects\\BulkyBook\\BulkyBook.Utility\\BulkyBook.Utility.csproj",
+        "projectPath": "C:\\Users\\shverma\\Desktop\\Projects\\BulkyBookMVC\\BulkyBook.Utility\\BulkyBook.Utility.csproj",
         "packagesPath": "C:\\Users\\shverma\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\shverma\\Desktop\\Projects\\BulkyBook\\BulkyBook.Utility\\obj\\",
+        "outputPath": "C:\\Users\\shverma\\Desktop\\Projects\\BulkyBookMVC\\BulkyBook.Utility\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\shverma\\AppData\\Roaming\\NuGet\\NuGet.Config",

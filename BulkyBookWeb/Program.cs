@@ -1,8 +1,8 @@
-using BulkyBook.Data;
 using BulkyBook.DataAccess.Repository;
 using BulkyBook.DataAccess.Repository.IRepository;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Identity;
+using BulkyBook.DataAccess;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -34,7 +34,8 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
-app.UseAuthentication();;
+app.UseAuthentication();
+app.MapRazorPages();
 
 app.UseAuthorization();
 

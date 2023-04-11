@@ -2,16 +2,15 @@
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
-namespace BulkyBook.Data
+namespace BulkyBook.DataAccess;
+public class ApplicationDbContext : IdentityDbContext
 {
-    public class ApplicationDbContext : IdentityDbContext
+    public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
     {
-        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
-        {
-
-        }
-        public DbSet<Category> Categories { get; set; }
-        public DbSet<CoverType> CoverTypes { get; set; }
-        public DbSet<Product> Products { get; set; }    
     }
+
+    public DbSet<Category> Categories { get; set; }
+    public DbSet<CoverType> CoverTypes { get; set; }
+    public DbSet<Product> Products { get; set; }
+    public DbSet<RegisteredUser> RegisteredUsers { get; set; }
 }

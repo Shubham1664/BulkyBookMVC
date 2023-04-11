@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "w+JXtw9EdcalON2WKSNXDkwm2jTOGk0ctSrV+so9OgEvsw2GJvSA5tpmVYNpi3WNvyUKxctp9UfD7dmvRYT5fA==",
+  "dgSpecHash": "O7Er335k/e+FVKi/yN6yDLryKsvpE+EYOUY8eLJKjs5zF3LYQ0MjpPCHsbmxvK4FjmR9fW8q30V/FpQEdCFEjg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\shverma\\Desktop\\Projects\\BulkyBook\\BulkyBook.Utility\\BulkyBook.Utility.csproj",
+  "projectFilePath": "C:\\Users\\shverma\\Desktop\\Projects\\BulkyBookMVC\\BulkyBook.Utility\\BulkyBook.Utility.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
