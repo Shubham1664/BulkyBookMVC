@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "/SbuTo5c3qI4xoeqQENDYIZ78R3zfku0463BbcrUICY=",
+  "Hash": "CNwmtKRnxwgL/WayeoACiU8RlQI8YqvwqNF3Blc8pi4=",
   "Source": "BulkyBookWeb",
   "BasePath": "_content/BulkyBookWeb",
   "Mode": "Default",
@@ -1239,6 +1239,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Images\\Products\\ede3f9db-8a98-4364-b7c0-bfc59698fd5f.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\shverma\\Desktop\\Projects\\BulkyBookMVC\\BulkyBookWeb\\wwwroot\\js\\Company.js",
+      "SourceId": "BulkyBookWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\shverma\\Desktop\\Projects\\BulkyBookMVC\\BulkyBookWeb\\wwwroot\\",
+      "BasePath": "_content/BulkyBookWeb",
+      "RelativePath": "js/Company.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\Company.js"
     },
     {
       "Identity": "C:\\Users\\shverma\\Desktop\\Projects\\BulkyBookMVC\\BulkyBookWeb\\wwwroot\\js\\Product.js",

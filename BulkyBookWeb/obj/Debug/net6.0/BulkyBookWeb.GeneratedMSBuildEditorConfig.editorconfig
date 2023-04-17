@@ -12,7 +12,7 @@ build_property.RootNamespace = BulkyBookWeb
 build_property.ProjectDir = C:\Users\shverma\Desktop\Projects\BulkyBookMVC\BulkyBookWeb\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
-build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = true
 build_property.MSBuildProjectDirectory = C:\Users\shverma\Desktop\Projects\BulkyBookMVC\BulkyBookWeb
 build_property._RazorSourceGeneratorDebug = 
 
@@ -30,6 +30,14 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/shverma/Desktop/Projects/BulkyBookMVC/BulkyBookWeb/Areas/Admin/Views/Category/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ2F0ZWdvcnlcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/shverma/Desktop/Projects/BulkyBookMVC/BulkyBookWeb/Areas/Admin/Views/Company/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ29tcGFueVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/shverma/Desktop/Projects/BulkyBookMVC/BulkyBookWeb/Areas/Admin/Views/Company/Upsert.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ29tcGFueVxVcHNlcnQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/shverma/Desktop/Projects/BulkyBookMVC/BulkyBookWeb/Areas/Admin/Views/CoverType/Create.cshtml]

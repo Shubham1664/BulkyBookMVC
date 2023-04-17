@@ -13,4 +13,5 @@ public class ApplicationDbContext : IdentityDbContext
     public DbSet<CoverType> CoverTypes { get; set; }
     public DbSet<Product> Products { get; set; }
     public DbSet<RegisteredUser> RegisteredUsers { get; set; }
+    public DbSet<Company> Companies { get; set; }    
 }

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "R4PWvTxk8ErxvAkCa9eDWyEuYCG4y/Mr8RHIQbMEdnCsfSkmDcUZq1cdKh69B2MhYbyAuoHdr4AvZCJVI5n/0A==",
+  "dgSpecHash": "QxqZxWOQkiQxKTwb+xIo91BGjc6WtKGdZne06OBny6mpus7pO5FOcpiJGCOBTyWMcGf4ZYVUTQTxyaD3kWR4kw==",
   "success": true,
   "projectFilePath": "C:\\Users\\shverma\\Desktop\\Projects\\BulkyBookMVC\\BulkyBook.Models\\BulkyBook.Models.csproj",
   "expectedPackageFiles": [
@@ -27,6 +27,8 @@
     "C:\\Users\\shverma\\.nuget\\packages\\microsoft.aspnetcore.mvc.dataannotations\\2.2.0\\microsoft.aspnetcore.mvc.dataannotations.2.2.0.nupkg.sha512",
     "C:\\Users\\shverma\\.nuget\\packages\\microsoft.aspnetcore.mvc.formatters.json\\2.2.0\\microsoft.aspnetcore.mvc.formatters.json.2.2.0.nupkg.sha512",
     "C:\\Users\\shverma\\.nuget\\packages\\microsoft.aspnetcore.mvc.viewfeatures\\2.2.0\\microsoft.aspnetcore.mvc.viewfeatures.2.2.0.nupkg.sha512",
+    "C:\\Users\\shverma\\.nuget\\packages\\microsoft.aspnetcore.razor\\2.2.0\\microsoft.aspnetcore.razor.2.2.0.nupkg.sha512",
+    "C:\\Users\\shverma\\.nuget\\packages\\microsoft.aspnetcore.razor.runtime\\2.2.0\\microsoft.aspnetcore.razor.runtime.2.2.0.nupkg.sha512",
     "C:\\Users\\shverma\\.nuget\\packages\\microsoft.aspnetcore.responsecaching.abstractions\\2.2.0\\microsoft.aspnetcore.responsecaching.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\shverma\\.nuget\\packages\\microsoft.aspnetcore.routing\\2.2.0\\microsoft.aspnetcore.routing.2.2.0.nupkg.sha512",
     "C:\\Users\\shverma\\.nuget\\packages\\microsoft.aspnetcore.routing.abstractions\\2.2.0\\microsoft.aspnetcore.routing.abstractions.2.2.0.nupkg.sha512",

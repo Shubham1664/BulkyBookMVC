@@ -45,6 +45,10 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\shverma\\Desktop\\Projects\\BulkyBookMVC\\BulkyBookWeb\\wwwroot\\js\\Company.js",
+      "PackagePath": "staticwebassets\\js\\Company.js"
+    },
+    {
       "Id": "C:\\Users\\shverma\\Desktop\\Projects\\BulkyBookMVC\\BulkyBookWeb\\wwwroot\\js\\Product.js",
       "PackagePath": "staticwebassets\\js\\Product.js"
     },
